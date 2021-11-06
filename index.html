@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #000000">
+
+        <!--Camera-->
+        <a-entity position="0 0 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+
+        <a-entity>
+            <a-sphere position="0 5 2" radius="1" color="#ffb07c"></a-sphere>
+        </a-entity>
+
+        <a-entity>
+            <a-box position="0 4 0" height="1" width="0.5" colour="#ffb07d"></a-box>
+        </a-entity>
+        <a-entity>
+            <a-box position="0 2 0" height="4" width="4" colour="#ffb07c"></a-box>
+        </a-entity>
+        <a-entity>
+            <a-box position="4 3.5 0" height="0.5" width="4" colour="#ffb07c"></a-box>
+            <animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 2000>
+        </a-entity>
+        <a-entity>
+            <a-box position="-4 3.5 0" height="0.5" width="4" colour="#ffb07c"></a-box>
+            <animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 2000>
+        </a-entity>
+
+        <a-entity>
+            <a-box position="-1 -2 0" height="4" width="0.5" colour="#ffb07c"></a-box>
+            <animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 2000>
+        </a-entity>
+        <a-entity>
+            <a-box position="1 -2 0" height="4" width="0.5" colour='#ffb07c' ></a-box>
+            <animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 2000>
+        </a-entity>
+        <!--Mercury-->
+        <!-- <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 2000">
+            <a-sphere position="1  0 -2" radius="0.1" color="#747b81"></a-sphere>  
+        </a-entity> -->
+
+        
+    </a-scene>
+</body>
+
+</html>
